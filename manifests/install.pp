@@ -7,7 +7,7 @@ class etherpad::install {
     'present', 'absent', 'latest': {
       $deps_ensure    = $etherpad::ensure
       $vcs_ensure     = $etherpad::ensure
-      $vcs_revision   = '1.6.6' # master doesn't currently "work" with node 4, 5
+      $vcs_revision   = $etherpad::ensure
     }
     default: {
       $deps_ensure    = 'present'
