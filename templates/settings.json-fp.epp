@@ -118,5 +118,5 @@
   "trustProxy" : <%= $etherpad::trust_proxy -%>,
 
   /* Privacy: disable IP logging */
-  "disableIPlogging" : false,
+  "disableIPlogging" : true,
 
