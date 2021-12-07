@@ -7,7 +7,7 @@ class etherpad::install {
     'present', 'absent', 'latest': {
       $deps_ensure    = $etherpad::ensure
       $vcs_ensure     = $etherpad::ensure
-      $vcs_revision   = $etherpad::ensure
+      $vcs_revision   = 'master'
     }
     default: {
       $deps_ensure    = 'present'
