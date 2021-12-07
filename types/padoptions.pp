@@ -11,7 +11,5 @@ type Etherpad::Padoptions = Struct[
     Optional['alwaysShowChat']   => Boolean,
     Optional['chatAndUsers']     => Boolean,
     Optional['lang']             => String[1],
-    Optional['skin_name']        => String,
-    Optional['skin_variants']    => String,
   }
 ]

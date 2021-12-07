@@ -59,6 +59,12 @@
   // Pad behavior
   "padOptions": <%= to_json_pretty($etherpad::_real_padoptions) %>,
 
+  // Skin to use
+  "skinName": "<%= $etherpad::skinName -%>",
+
+  // Skin Variants to use
+  "skinVariants": "<%= $etherpad::skinVariants -%>",
+
   /* Should we suppress errors from being visible in the default Pad Text? */
   "suppressErrorsInPadText" : false,
 

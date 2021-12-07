@@ -41,6 +41,8 @@ class etherpad (
   Etherpad::Ldapauth $ldapauth      = {},
   Etherpad::Buttonlink $button_link = {},
   Etherpad::Mypads $mypads          = {},
+  String $skinName                  = 'colibiris',
+  String $skinVariants              = 'dark-toolbar super-dark-background super-dark-editor full-width-editor',
   Boolean $require_session          = false,
   Boolean $edit_only                = false,
   Boolean $require_authentication   = false,
