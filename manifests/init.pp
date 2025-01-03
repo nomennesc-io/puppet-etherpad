@@ -10,7 +10,7 @@ class etherpad (
   String $service_name                       = 'etherpad',
   Enum['running', 'stopped'] $service_ensure = 'running', # again, should be an enum…
   # what if the fact doesn't exist (yet) or is b0rked? use Optional.
-  Optional[String] $service_provider         = $::service_provider,
+  Optional[String] $service_provider         = $facts['service_provider'],
   Boolean $manage_user                       = true,
   Boolean $manage_abiword                    = false,
   Stdlib::Absolutepath $abiword_path         = '/usr/bin/abiword',
